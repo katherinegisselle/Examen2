@@ -263,6 +263,26 @@ ul.social-icons > li > a{
 
 
 
+#sec-carousel{
+	position: relative;
+	
+}
+
+#sec-testimonials {
+	background-image: url(../img/bg-testimonials.jpg);
+	background-repeat:repeat;
+	background-size: cover;
+	color: #FFF;
+	padding-bottom: 100px;
+	padding-top: 100px;
+		
+}
+
+#sec-testimonials h5{
+	
+	color: #FFF;
+		
+}
 
 
 
@@ -304,6 +324,96 @@ ul.social-icons > li > a{
 sec-testimonials{
 	background-color: #FFFFFF;
 	}
+
+
+
+.app-carousel {
+    padding: 0 6%;
+	margin-top: 50px;
+}
+.app-carousel .center .single-shot {
+    opacity: 1;
+    transform: scale(1);
+}
+.app-carousel .single-shot {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.app-carousel .owl-dots {
+    text-align: center;
+}
+.app-carousel .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a49fba !important;
+    border-radius: 50%;
+    margin: 35px 6px;
+}
+.app-carousel .owl-dot.active {
+    background-color: #fb397d;
+    border: 0 !important;
+}
+.owl-carousel .owl-item img{
+	width: inherit;
+}
+.app-carousel h4{
+	color: #FFF;
+	font-weight: 600;
+}
+.app-carousel h5{
+	color: #000;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+
+
+#sec-carousel{
+	position: relative;
+	
+}
+
+#sec-testimonials {
+	background-image: url(../img/bg-testimonials.jpg);
+	background-repeat:repeat;
+	background-size: cover;
+	color: #FFF;
+	padding-bottom: 100px;
+	padding-top: 100px;
+		
+}
+
+#sec-testimonials h5{
+	
+	color: #FFF;
+		
+}
+
+#sec-counter {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #1e2629;
+	color: #FFF;
+	font-size: 28px;
+	
+}
+
+#sec-counter h2{
+	padding-top: 20px;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+#sec-counter p{
+	
+	font-size: 15px;
+
+}
+
+#sec-counter i {
+	color: #3694da;
+}
 
 
 
