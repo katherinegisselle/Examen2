@@ -1,0 +1,71 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: darkslategray;
+}
+
+header a{
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.blue{
+	color: #0064A4;
+}
+
+.barra{
+	background-color: #0064A4;
+	width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 3px;
+	margin-bottom: 30px;
+}
+
+.barra-izquierda{
+	display: inline-block;
+}
+
+.btn-icon{
+	border-radius: 30px;
+	border: solid;
+	border-color: #0083D7;
+	padding-bottom: 13px;
+	padding-top: 13px;
+	padding-left: 15px;
+	padding-right: 20px;
+}
+
+#details{
+	padding: 15px;
+}
+
+.titulo2{
+	font-weight: bolder;
+	padding-left: 350px;
+	padding-top: 30px;
+}
+
+#popular-works{
+	background-color: #f3f3f3;
+}
+	
+.titulitos{
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+#secc-ourteam h4{
+Text-align: center;
+Padding-top:50px;
+}
+
+.titulo2{
+	font-weight: bolder;
+	padding-left: 250px;
+	padding-top: 30px;
+}
+
+.footer2{
+	background-color:#353535
+	}
