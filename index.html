@@ -13,7 +13,6 @@
 <link href="css/animate.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -414,42 +413,68 @@
 	
 	
 	
-	 <section id="sec-testimonials" class="espaciado">
-		<div class="container">
-			
-			
-			<h2 class="titulo text-center">WHAT CLIENTS SAY?</h2>
-			
-			<div class="app-carousel owl-carousel">
-				
-				<div class="single-shot">
-					<img src="img/img-testimonial-1.png" class="img-fluid">
-					
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-					<h4>John Doe</h4>
-					<h5>Our client</h5>
-				</div>
-				
-				<div class="single-shot">
-					<img src="img/img-testimonial-2.jpg" class="img-fluid rounded-circle">
-	
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-					<h4>Sonia Doe</h4>
-					<h5>Our client</h5>
-				</div>
-				
-				<div class="single-shot">
-					<img src="img/img-testimonial-3.jpg" class="img-fluid rounded-circle">
-					
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-					<h4>Jay Doe</h4>
-					<h5>Our client</h5>
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
+	<section id="sec-testimonials" class="espaciado"> 
+
+      <div class="container"> 
+
+        <h3>What Clients Say</h3> 
+
+        <div class="app-carousel owl-carousel"> 
+
+          <div class="single-shot"> 
+
+            <img src="img/img-testimonial-1.png" class="img-fluid rounded-circle mx-auto"> 
+
+            <p> 
+
+              Works for any specification. I am a web developer and purchase Themeforesttemplates quite often. As always, the last one was great looking and easy to customize to my clients specification. 
+
+            </p> 
+
+            <h4>John Doe</h4> 
+
+            <h5>Our Client</h5> 
+
+          </div> 
+
+          <div class="single-shot"> 
+
+            <img src="img/img-testimonial-2.jpg" class="img-fluid rounded-circle mx-auto"> 
+
+            <p> 
+
+              Works for any specification. I am a web developer and purchase Themeforesttemplates quite often. As always, the last one was great looking and easy to customize to my clients specification. 
+
+            </p> 
+
+            <h4>John Doe</h4> 
+
+            <h5>Our Client</h5> 
+
+          </div> 
+
+          <div class="single-shot"> 
+
+            <img src="img/img-testimonial-3.jpg" class="img-fluid rounded-circle mx-auto"> 
+
+            <p> 
+
+              Works for any specification. I am a web developer and purchase Themeforesttemplates quite often. As always, the last one was great looking and easy to customize to my clients specification. 
+
+            </p> 
+
+            <h4>John Doe</h4> 
+
+            <h5>Our Client</h5> 
+
+          </div> 
+
+        </div> 
+
+        </div> 
+
+      </section> 
+      
       
       <section id="counter" class="espaciado-counter">
       	<div class="container">
@@ -639,14 +664,6 @@
       	
       	
       	
-      	
-      	
-      	
-      	
-      	
-      	
-      	
-      	
       </section>
 
  
@@ -671,24 +688,6 @@
 			</div>
 		</div>
 	</footer>
- 
-
- 
-
-
-
-
-
-
-
-
-
-	
-	
-	
-
-	
-	
 
 
 		<script src="js/jquery.min.js"></script>
@@ -698,7 +697,60 @@
 	<script>
   		new WOW().init();
   	</script>
+	
+	<script src="js/owl.carousel.min.js"></script>
+	<script>
+	$(window).load(function () {
+                enableBackToTop();
+            });
+            
+            function enableBackToTop() {
+                var backToTop = $('<a>', { class: 'back-to-top' });
+                backToTop.appendTo('body');
 
+                backToTop.hide();
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() != 0) {
+                        backToTop.fadeIn ();
+                    } else {
+                        backToTop.fadeOut ();
+                    }
+                });
+
+                backToTop.click (function (e) {
+                    e.preventDefault ();
+
+                    $('body, html').animate({
+                        scrollTop: 0
+                    }, 300);
+                });
+				
+            }//enableBackToTop
+		
+		$(".app-carousel").owlCarousel({
+				items: 1,
+				loop: true,
+				autoplay: true,
+				smartSpeed: 800,
+				margin: 30,
+				center: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 1
+					},
+					992: {
+						items: 1
+					}
+				}
+			});
+
+		
+</script>
 
 </body>
 </html>
